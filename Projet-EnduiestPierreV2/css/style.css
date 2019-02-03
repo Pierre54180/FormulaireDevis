@@ -1,0 +1,374 @@
+
+/*****************
+  POLICE DE BASE
+ *****************/
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('bold/opensans-bold.eot');
+    src: url('bold/opensans-bold.eot?#iefix') format('embedded-opentype'),
+    url('bold/opensans-bold.woff') format('woff'),
+    url('bold/opensans-bold.ttf') format('truetype'),
+    url('bold/opensans-bold.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('italic/opensans-italic.eot');
+    src: url('italic/opensans-italic.eot?#iefix') format('embedded-opentype'),
+    url('italic/opensans-italic.woff') format('woff'),
+    url('italic/opensans-italic.ttf') format('truetype'),
+    url('italic/opensans-italic.svg#open_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('regular/opensans-regular.eot');
+    src: url('regular/opensans-regular.eot?#iefix') format('embedded-opentype'),
+    url('regular/opensans-regular.woff') format('woff'),
+    url('regular/opensans-regular.ttf') format('truetype'),
+    url('regular/opensans-regular.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*****************
+    ANIMATION
+ *****************/
+@keyframes highlight{
+    0%{ background-color: white;}
+    100% {background-color: #C3E8F7}
+}
+
+html {font-size: 100%;}
+
+input[type=checkbox], input[type=radio] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    ;}
+
+/*****************
+        TITRE
+ *****************/
+.titre{
+    font-family: 'caviar_dreamsregular';
+    font-size: 60px;
+    text-align: center;
+    background-color: #2aabd2;
+    color: whitesmoke;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f5f5+12,6bc6ea+48,f5f5f5+90 */
+    background: rgb(245,245,245); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(245,245,245,1) 12%, rgba(107,198,234,1) 48%, rgba(245,245,245,1) 90%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(245,245,245,1) 12%,rgba(107,198,234,1) 48%,rgba(245,245,245,1) 90%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(245,245,245,1) 12%,rgba(107,198,234,1) 48%,rgba(245,245,245,1) 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f5f5f5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.logo img { width: 100%;}
+
+.bloc{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.butondevis
+{
+margin-left : 45%;
+}
+
+.bloc2{
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 20px;
+    background-color:#C3E8F7;
+
+}
+.blocFacade{
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 20px;
+    background-color:#C3E8F7;
+text-align: center;
+}
+
+.cc-selector{
+    text-align: center;
+    width: 100%;
+
+
+}
+.pierre{
+margin-left: 17%;
+}
+
+.cc-selector input{
+
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+}
+
+.crepis{ background-image:url("../images/item/crepis.jpg");}
+.peinturefacade{background-image:url("../images/item/peinturefacade.jpg");}
+.bardage{  background-image:url("../images/item/bardage.jpg");}
+.isolationex{background-image:url("../images/item/isolationex.jpg");}
+.brique{ background-image:url("../images/item/brique.jpg");}
+.agglos{background-image:url("../images/item/agglos.jpg");}
+.supportfissure{  background-image:url("../images/item/nofissure.jpg");}
+.supportnonfissure{background-image:url("../images/item/fissure.jpg");}
+.gratte { background-image:url("../images/item/gratte.jpg");}
+.taloche{ background-image:url("../images/item/taloche.jpg");}
+.rustique{background-image:url("../images/item/rustique.jpg");}
+.pliolite { background-image:url("../images/item/pliolite.jpg");}
+.ossature { background-image:url("../images/item/Ossature.jpg");}
+.bois { background-image:url("../images/item/bois.jpg");}
+.vinylit { background-image:url("../images/item/vinylit.jpg");}
+.canexel { background-image:url("../images/item/Canexel.jpg");}
+
+.cadre{
+    display: inline-block;
+    width: 100%;
+}
+
+.cadre:hover .libelle{
+    opacity: 100;
+}
+
+.libelle{
+    opacity : 0;
+}
+
+.cc-selector input:active +.item{opacity: .9;}
+.cc-selector input:checked +.item{
+    -webkit-filter: none;
+    -moz-filter: none;
+    filter: none;
+    border-style: solid;
+    border-color: #3a8c12;
+}
+
+.oui {
+    color: #3a8c12;
+    margin-top: -70px;
+    margin-left: 60px;
+    position: absolute;
+    display: none !important;
+}
+
+.cc-selector input:checked +.oui {
+    display: block !important;
+}
+
+
+.item{
+    cursor:pointer;
+    background-size:cover;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width: 100%;
+    height:250px;
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+    -webkit-filter:  opacity(.7);
+    -moz-filter:   opacity(.7);
+    filter:  opacity(.7);
+    }
+
+.item:hover{
+
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+.titledevis{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(45deg, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.2);
+
+
+}
+
+.pignon{
+    border-style: solid;
+    width: 30%;
+    margin-left : 15.5%;
+    height: 15px;
+}
+
+.refus
+{
+    border-style: solid;
+    color : red;
+    display: none;
+
+}
+
+
+ul {
+    margin-left:30px;
+}
+
+.facade {
+    vertical-align: top;
+    transition:0.5s linear all;
+}
+
+.facade.on-add {
+    animation: highlight 0.4s;
+}
+.facade.on {
+    background:#C3E8F7;
+}
+.facade.on-remove {
+    animation: highlight 0.4s;
+}
+
+
+@media screen and ( max-width: 45em)
+{
+    .titre {
+
+        font-size: 15px;
+        text-align: center;
+    }
+    i {
+        display: none;
+    }
+
+}
+
+/*****************
+       TEST
+ *****************/
+.container{
+background-color: white;
+    width: 95%;
+    margin-top: 5px;
+    padding-left : 0px;
+    padding-right : 0px;
+}
+
+.imgtitre
+{
+    height: 100px;
+}
+
+.imgtitre img {
+    width: 100%;
+}
+
+.titredev{
+    font-family: 'open_sansbold';
+    margin-top: 7%;
+    font-size: 2.25em;
+    color :#0e98d1;
+    letter-spacing: 0.08em;
+}
+.descriptiontitre{
+    font-size :0.5em;
+    color: black;
+    font-family: 'open_sansbold';
+    letter-spacing: 0.08em;
+
+}
+
+.bloctravaux {
+     border: solid #fa870c;
+     margin-top: 49px;
+ }
+
+.iconetravaux{
+    background-color: white;
+    color : #fa870c;
+}
+
+.descriptiontravaux{
+    font-family: 'open_sansbold', serif;
+    font-size: 2.2em;
+    background-color: orange;
+    height: 70px;
+    border-left-style: solid;
+    border-color: #fa870c;
+    color: white;
+}
+
+.sousdescriptiontravaux{
+    font-size : 0.5em;
+}
+
+
+
+
+
+.circle{
+    font-family: 'open_sansbold', serif;
+    display:inline-block;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    text-align:center;
+    background:#fa870c;
+    color: black;
+    padding-left: 10px;
+}
+
+.circle_text{
+    display:block;
+color : white; font-size: 3em;
+}
+
+.titrepartie{
+    font-size: 1.5em;
+
+    font-family: 'open_sansbold', serif;
+    color: #fa870c;
+
+}
+
+
+.bloc-item{
+    width: 25%;
+    border-style: solid;
+    border-width: 1px;
+    height: auto;
+
+}
+
+.tittreimage{
+    font-family: 'open_sansbold', serif;
+    font-size : 1.6em;
+    height: 80px;
+    text-align: center;
+    padding-top : 10px;
+
+}
+
+.Blocprincipal {
+    border-left-style: solid;
+    border-color:#fa870c;
+    margin-left: 200px;
+    height: auto;
+}
+.typerevement{
+    margin-top: 60px;
+}
+.trest
+{
+    border-style: solid;
+}
